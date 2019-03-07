@@ -32,7 +32,7 @@ var Widget={
         console.log(this); // 指向Widget对象
     }
 };
-Widget.init();// this.doSomething is not a function
+Widget.init();
 
 var Widget={
     init:function () {
@@ -45,5 +45,5 @@ var Widget={
         console.log(this);  // 指向Widget对象
     }
 };
-Widget.init(); //Handlingclickevent
+Widget.init(); 
 ```
