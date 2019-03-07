@@ -1,9 +1,9 @@
 ## 目录
-- [关于appply(),bind(),call()](#appply-a)
+- [关于appply(),bind(),call()](#appply(),bind(),call())
 - [事件委托](#事件委托)
 - [JavaScript中的this指向问题](#JavaScript中的this)
 
-### appply a
+### ```appply(),bind(),call()```
 ```js
 // 都是改变this指向，第一个参数都是指向的对象，区别在第二个参数
 // apply()第二个参数已数组形式给出
