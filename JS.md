@@ -1,3 +1,4 @@
+- [this指向问题](#3. JavaScript中的this)
 ### 1. appply(),bind(),call()
 ```js
 // 都是改变this指向，第一个参数都是指向的对象，区别在第二个参数
