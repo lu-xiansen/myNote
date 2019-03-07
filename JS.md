@@ -1,5 +1,9 @@
-- [this指向问题](#JavaScript中的this)
-### 1. appply(),bind(),call()
+## 目录
+- [关于appply(),bind(),call()](#appply(),bind(),call())
+- [事件委托](#事件委托)
+- [JavaScript中的this指向问题](#JavaScript中的this)
+
+### appply(),bind(),call()
 ```js
 // 都是改变this指向，第一个参数都是指向的对象，区别在第二个参数
 // apply()第二个参数已数组形式给出
@@ -9,7 +13,7 @@ bind(this,a,b,c)()
 // call()参数同bind()，但不需要调用
 call(this,a,b,c)
 ```
-### 2. 事件委托
+### 事件委托
 个人理解：事件监听的一种用法，子元素较多的情况下，将监听的任务委托给其父元素，利用事件冒泡来监听子元素
 ### JavaScript中的this
 1. 在调用函数时使用new关键字，函数内的this是一个全新的对象。
