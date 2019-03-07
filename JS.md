@@ -1,5 +1,5 @@
 ### 1. appply(),bind(),call()
-```Javascript
+```js
 // 都是改变this指向，第一个参数都是指向的对象，区别在第二个参数
 // apply()第二个参数已数组形式给出
 apply(this,[arguments])
