@@ -68,3 +68,23 @@ arr.sort((a,b)=>{
     return b-a      // 理解为b到a
 })  // [10, 8, 3, 1, 0, -2, -35]
 ```
+### 数组去重
+```js
+// ES6 Set
+let arr1 = [1,2,3,2,5,1];
+let set = new Set(arr1); // {1,2,3,5,}
+let arr2 = Array.from(set); // [1,2,3,5]
+
+// 其它方法
+for(let i=0;i<arr1.length-1;i++){
+    for(let j=i+1;j<arr1.length;j++){
+        if(arr1[j] == arr1[i]){
+            arr1.splice(j,1);
+            j--;
+        }
+    }
+}
+// console.log(arr1)  [1,2,3,5]
+
+
+```
