@@ -76,15 +76,21 @@ let set = new Set(arr1); // {1,2,3,5,}
 let arr2 = Array.from(set); // [1,2,3,5]
 
 // 其它方法
+1. 
 for(let i=0;i<arr1.length-1;i++){
     for(let j=i+1;j<arr1.length;j++){
         if(arr1[j] == arr1[i]){
-            arr1.splice(j,1);
+            arr1.splice(j,1);       // splice()返回的是数组是删除了的元素 原数组arr1已经被改变
             j--;
         }
     }
 }
 // console.log(arr1)  [1,2,3,5]
-
-
+2. 
+for(let i=0;i<arr1.length;i++){
+    if(arr1.indexOf(arr1[i]) != i){
+        arr1.splice(i,1)   
+    }
+}
+// console.log(arr1)  [1,2,3,5]
 ```
