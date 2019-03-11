@@ -3,7 +3,7 @@
 - [事件委托](#事件委托)
 - [JavaScript中的this指向问题](#JavaScript中的this)
 - [排序sort()](#排序)
-
+- [数组去重](#数组去重)
 
 
 ### apply(),bind(),call()
