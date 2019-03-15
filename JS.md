@@ -4,7 +4,7 @@
 - [JavaScript中的this指向问题](#JavaScript中的this)
 - [排序sort()](#排序)
 - [数组去重](#数组去重)
-
+- [web存储](#web存储 cookie localStorage sessionStorage)
 
 ### apply(),bind(),call()
 ```js
@@ -94,3 +94,18 @@ for(let i=0;i<arr1.length;i++){
 }
 // console.log(arr1)  [1,2,3,5]
 ```
+### web存储 cookie localStorage sessionStorage
+- H5之前，主要的存储方式是cookie
+- localStorage 存储于本地浏览器，不像cookie一样存储在http请求头字段里，节约了带宽
+    大小一般限制为5M，只要不删除，就会一直存在
+    存储方式为字符串，所以通常需要JSON.parse(localStorage.key)转换为json对象来操作
+    存储对象时也需要通过JSON.stringify(obj)转为字符串存储
+```js
+localstorage.length: 获取当前存储的键值对数量
+localstorage.key(n):获取第n项的键值
+localstorage.getItem(key):获取对应键值的数据 或者localStorage.key
+localstorage.setItem(key,value):设置对应的键值对 或者localStorage.key = value
+localstorage.remove(key):清除某个数据
+localstorage.clear():清除存储的所有数据
+```
+- sessionStorage 存储周期为当前会话，浏览器关闭就会删除，用法基本同localStorage
