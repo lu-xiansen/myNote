@@ -4,7 +4,7 @@
 - [JavaScript中的this指向问题](#JavaScript中的this)
 - [排序sort()](#排序)
 - [数组去重](#数组去重)
-- [web存储](#web存储 cookie localStorage sessionStorage)
+- [web存储](#web存储-cookie-localStorage-sessionStorage)
 
 ### apply(),bind(),call()
 ```js
