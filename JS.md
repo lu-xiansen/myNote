@@ -1,5 +1,5 @@
 ## 目录
-- [关于apply(),bind(),call()](#apply-bind-call)
+- [关于apply(),bind(),call()](#apply,bind,call)
 - [事件委托](#事件委托)
 - [JavaScript中的this指向问题](#JavaScript中的this)
 - [排序sort()](#排序)
