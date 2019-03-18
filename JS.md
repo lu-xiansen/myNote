@@ -1,12 +1,12 @@
 ## 目录
-- [关于apply(),bind(),call()](#apply,bind,call)
+- [关于apply(),bind(),call()](#apply-bind-call)
 - [事件委托](#事件委托)
 - [JavaScript中的this指向问题](#JavaScript中的this)
 - [排序sort()](#排序)
 - [数组去重](#数组去重)
 - [web存储](#web存储-cookie-localStorage-sessionStorage)
 
-### apply,bind,call
+### apply bind call
 ```js
 // 都是改变this指向，第一个参数都是指向的对象，区别在第二个参数
 // apply()第二个参数已数组形式给出
