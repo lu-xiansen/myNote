@@ -122,5 +122,6 @@ localstorage.remove(key):清除某个数据
 localstorage.clear():清除存储的所有数据
 ```
 - sessionStorage 存储周期为当前会话，浏览器关闭就会删除，用法基本同localStorage
+
 [返回顶部 ▲](#目录)
 
