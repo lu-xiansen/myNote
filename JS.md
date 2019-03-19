@@ -60,8 +60,9 @@ Widget.init();
 
 ### 原生对象的常用方法
 ```js
-
+待补充
 ```
+[返回顶部 ▲](#目录)
 
 ### 排序
 ```js
@@ -76,6 +77,8 @@ arr.sort((a,b)=>{
     return b-a      // 理解为b到a
 })  // [10, 8, 3, 1, 0, -2, -35]
 ```
+[返回顶部 ▲](#目录)
+
 ### 数组去重
 ```js
 // ES6 Set
@@ -103,6 +106,7 @@ for(let i=0;i<arr1.length;i++){
 // console.log(arr1)  [1,2,3,5]
 ```
 [返回顶部 ▲](#目录)
+
 ### web存储 cookie localStorage sessionStorage
 - H5之前，主要的存储方式是cookie
 - localStorage 存储于本地浏览器，不像cookie一样存储在http请求头字段里，节约了带宽
@@ -118,3 +122,5 @@ localstorage.remove(key):清除某个数据
 localstorage.clear():清除存储的所有数据
 ```
 - sessionStorage 存储周期为当前会话，浏览器关闭就会删除，用法基本同localStorage
+[返回顶部 ▲](#目录)
+
