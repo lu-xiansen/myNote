@@ -6,6 +6,7 @@
 - [多个原生对象的常用方法](#原生对象的常用方法)
 - [排序sort()](#排序)
 - [数组去重](#数组去重)
+- [forEach()和map()(待完善)](#forEach和map)
 - [web存储](#web存储-cookie-localStorage-sessionStorage)
 
 ### js原始数据类型
@@ -114,6 +115,33 @@ for(let i=0;i<arr1.length;i++){
     }
 }
 // console.log(arr1)  [1,2,3,5]
+```
+[返回顶部 ▲](#目录)
+
+### forEach()和map()
+```js
+都接受3个参数 item(当前项) index(当前项索引) arr(原数组)
+
+let num = [1,2,3,4];
+num.forEach(function(item,index,arr){
+    console.log(item)
+    if(item == 2){
+        num.shift()
+    }
+},this)
+// 1
+// 2
+// 4
+// num [2,3,4]
+在使用forEach()时候，如果数组在迭代的过程被修改，则其他元素会被跳过。因为 forEach()不会在迭代之前创建数组的副本
+forEach()返回值为undefined，不能链式调用
+原数组被改变
+
+arr.map(function(item,index,arr){
+    
+})
+map()返回一个新数组,数组的元素是回调函数处理过值,不改变原数组,也不检测空数组
+
 ```
 [返回顶部 ▲](#目录)
 
