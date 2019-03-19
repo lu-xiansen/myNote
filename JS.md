@@ -10,8 +10,7 @@
 
 ### js原始数据类型
 undefined  null  Boolean 
-<a href="http://www.runoob.com/jsref/jsref-obj-string.html" target="_blank">String</a>
-[String](http://www.runoob.com/jsref/jsref-obj-string.html) {:target='_blank'}
+[String](http://www.runoob.com/jsref/jsref-obj-string.html)
 [Number](http://www.runoob.com/jsref/jsref-obj-number.html) 
 [Object(Array,Date,Math,RegExp)](http://www.runoob.com/jsref/jsref-tutorial.html) 
 [Symbol](http://www.runoob.com/w3cnote/es6-symbol.html)
