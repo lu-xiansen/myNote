@@ -55,7 +55,6 @@ var Widget={
 };
 Widget.init(); 
 ```
-| a |
 [返回顶部 ▲](#目录)
 ### 排序
 ```js
@@ -96,6 +95,7 @@ for(let i=0;i<arr1.length;i++){
 }
 // console.log(arr1)  [1,2,3,5]
 ```
+[返回顶部 ▲](#目录)
 ### web存储 cookie localStorage sessionStorage
 - H5之前，主要的存储方式是cookie
 - localStorage 存储于本地浏览器，不像cookie一样存储在http请求头字段里，节约了带宽
