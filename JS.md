@@ -9,8 +9,11 @@
 - [web存储](#web存储-cookie-localStorage-sessionStorage)
 
 ### js原始数据类型
-undefined null Boolean 
-[String](http://www.runoob.com/jsref/jsref-obj-string.html) [Number](http://www.runoob.com/jsref/jsref-obj-number.html) [Object(Array,Date,Math,RegExp)](http://www.runoob.com/jsref/jsref-tutorial.html) [Symbol](http://www.runoob.com/w3cnote/es6-symbol.html)
+undefined  null  Boolean 
+[String](http://www.runoob.com/jsref/jsref-obj-string.html) {:target='_blank'}
+[Number](http://www.runoob.com/jsref/jsref-obj-number.html) 
+[Object(Array,Date,Math,RegExp)](http://www.runoob.com/jsref/jsref-tutorial.html) 
+[Symbol](http://www.runoob.com/w3cnote/es6-symbol.html)
 
 ### apply(),bind(),call
 ```js
