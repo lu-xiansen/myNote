@@ -10,7 +10,8 @@
 
 ### js原始数据类型
 ```js
-undefined null Boolean String Number Object Symbol
+undefined null Boolean 
+[String](http://www.runoob.com/jsref/jsref-obj-string.html) [Number](http://www.runoob.com/jsref/jsref-obj-number.html) [Object(Array,Date,Math,RegExp)](http://www.runoob.com/jsref/jsref-tutorial.html) [Symbol](http://www.runoob.com/w3cnote/es6-symbol.html)
 ```
 ### apply(),bind(),call
 ```js
