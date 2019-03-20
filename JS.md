@@ -6,7 +6,7 @@
 - [多个原生对象的常用方法](#原生对象的常用方法)
 - [排序sort()](#排序)
 - [数组去重](#数组去重)
-- [forEach()和map()(待完善)](#forEach和map)
+- [forEach()和map()](#forEach和map)
 - [web存储](#web存储-cookie-localStorage-sessionStorage)
 - [捕获和冒泡](#捕获和冒泡)
 
