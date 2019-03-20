@@ -166,8 +166,8 @@ localstorage.clear():清除存储的所有数据
 
 ### 捕获和冒泡
 - 事件分为捕获和冒泡事件
-- 个人理解：- 代码自上而下执行，从外层标签到内层标签为捕获过程（window>document>body>div...）
-		 - 捕获完成后会执行冒泡过程，和捕获过程相反（div>body>document>window）
+- 个人理解：1. 代码自上而下执行，从外层标签到内层标签为捕获过程（window>document>body>div...）
+	2. 捕获完成后会执行冒泡过程，和捕获过程相反（div>body>document>window）
 ```js
 document.addEventListener('event',function,type)
 // event: 事件类型
