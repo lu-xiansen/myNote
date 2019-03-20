@@ -121,28 +121,38 @@ for(let i=0;i<arr1.length;i++){
 
 ### forEach()和map()
 ```js
-都接受3个参数 item(当前项) index(当前项索引) arr(原数组)
+//都接受3个参数 item(当前项) index(当前项索引) arr(原数组)
 
-let num = [1,2,3,4];
+let num = [1,2,3,4,5,6];
 num.forEach(function(item,index,arr){
-    console.log(item)
-    if(item == 2){
+    console.log(item,index)
+    if(item == 4){
         num.shift()
+        // 这步执行完之后，原数组变为[2,3,4,5,6]
+        // 所以下一步原本打印5的位置上的元素变为6
     }
 },this)
-// 1
-// 2
-// 4
+// 1 0
+// 2 1
+// 3 2
+// 4 3 
+// 6 4
 // num [2,3,4]
-在使用forEach()时候，如果数组在迭代的过程被修改，则其他元素会被跳过。因为 forEach()不会在迭代之前创建数组的副本
+在使用forEach()时候，如果数组在迭代的过程被修改，后续函数执行时传入的就是修改后的数组。
+因为forEach()不会在迭代之前创建数组的副本
 forEach()返回值为undefined，不能链式调用
 原数组被改变
 
+let arr = [1,4,9,16]
 arr.map(function(item,index,arr){
-    
+    return Math.sqrt(item)
 })
-map()返回一个新数组,数组的元素是回调函数处理过值,不改变原数组,也不检测空数组
+// [1,2,3,4]
+上面函数可简写为
+arr.map(Math.sqrt)
 
+map()返回一个新数组,数组的元素是回调函数处理过值,也不检测空数组
+不改变原数组
 ```
 [返回顶部 ▲](#目录)
 
