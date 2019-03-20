@@ -8,6 +8,7 @@
 - [数组去重](#数组去重)
 - [forEach()和map()(待完善)](#forEach和map)
 - [web存储](#web存储-cookie-localStorage-sessionStorage)
+- [捕获和冒泡](#捕获和冒泡)
 
 ### js原始数据类型
 1. undefined  
@@ -162,4 +163,13 @@ localstorage.clear():清除存储的所有数据
 - sessionStorage 存储周期为当前会话，浏览器关闭就会删除，用法基本同localStorage
 
 [返回顶部 ▲](#目录)
-
+### 捕获和冒泡
+· 事件分为捕获和冒泡事件
+· 个人理解：· 代码自上而下执行，从外层标签到内层标签为捕获过程（window>document>body>div...）
+		 · 捕获完成后会执行冒泡过程，和捕获过程相反（div>body>document>window）
+```js
+document.addEventListener('event',function,type)
+// event: 事件类型
+// function: 事件触发后执行的函数
+// type: true/false  指定为冒泡或捕获（可选,默认false,即默认为冒泡）
+```
