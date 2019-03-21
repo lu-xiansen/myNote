@@ -3,7 +3,7 @@
 - [关于apply(),bind(),call()](#applybindcall)
 - [事件委托](#事件委托)
 - [JavaScript中的this指向问题](#JavaScript中的this)
-- [闭包（***待完善***）](#闭包)
+- [闭包（***待完善***）](#JavaScript作用域以及闭包)
 - [多个原生对象的常用方法](#原生对象的常用方法)
 - [排序sort()](#排序)
 - [数组去重](#数组去重)
