@@ -8,10 +8,10 @@ div {
 }
 ```
 ### 2. BFC清浮动
-BFC的触发方式
 我们可以给父元素添加以下属性来触发BFC：
 1. float 为 left | right
 2. overflow 为 hidden | auto | scorll
 3. display 为 table-cell | table-caption | inline-block | flex | inline-flex
 4. position 为 absolute | fixed
+
 [出处](https://www.jianshu.com/p/09bd5873bed4)
