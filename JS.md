@@ -10,6 +10,7 @@
 - [forEach()和map()](#forEach和map)
 - [web存储](#web存储-cookie-localStorage-sessionStorage)
 - [捕获和冒泡](#捕获和冒泡)
+- [深拷贝和浅拷贝](#深拷贝和浅拷贝)
 
 ### js原始数据类型
 1. undefined  
@@ -197,4 +198,20 @@ document.addEventListener('event',function,type)
 // type: true/false  指定为冒泡或捕获（可选,默认false,即默认为冒泡）
 ```
 [返回顶部 ▲](#目录)
+
+### 深拷贝和浅拷贝
+区别：`B复制了A，A发生改变时，B如果跟着改变，就是浅拷贝，B如果是独立的，不随着A发生改变，就是深拷贝`
+这个概念针对引用类型数据
+1. 实现深拷贝
+```js
+let obj1 = {
+    name: 'wjl',
+    age: 25
+    };
+let obj2 = JSON.parse(JSON.stringify(obj1));  
+    obj1.name = 'czy';
+    obj1   // {name: 'czy',age:25}  原对象属性被改变
+    obj2   // {name: 'wjl',age:25}  深拷贝的对象拥有独立的内存，不受obj1变化的影响
+```
+
 
