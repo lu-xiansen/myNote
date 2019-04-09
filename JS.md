@@ -1,18 +1,18 @@
 ## 目录
-- [js原始数据类型](#js原始数据类型)
-- [关于apply(),bind(),call()](#applybindcall)
-- [事件委托](#事件委托)
-- [JavaScript中的this指向问题](#JavaScript中的this)
-- [闭包（***待完善***）](#JavaScript作用域以及闭包)
-- [多个原生对象的常用方法](#原生对象的常用方法)
-- [排序sort()](#排序)
-- [数组去重](#数组去重)
-- [forEach()和map()](#forEach和map)
-- [web存储](#web存储-cookie-localStorage-sessionStorage)
-- [捕获和冒泡](#捕获和冒泡)
-- [深拷贝和浅拷贝](#深拷贝和浅拷贝)
+- [一、js原始数据类型](#一、js原始数据类型)
+- [二、关于apply(),bind(),call()](#二、applybindcall)
+- [三、事件委托](#三、事件委托)
+- [四、JavaScript中的this指向问题](#四、JavaScript中的this)
+- [五、闭包（***待完善***）](#五、JavaScript作用域以及闭包)
+- [六、多个原生对象的常用方法](#六、原生对象的常用方法)
+- [七、排序sort()](#七、排序)
+- [八、数组去重](#八、数组去重)
+- [九、forEach()和map()](#九、forEach和map)
+- [十、web存储](#十、web存储-cookie-localStorage-sessionStorage)
+- [十一、捕获和冒泡](#十一、捕获和冒泡)
+- [十二、深拷贝和浅拷贝](#十二、深拷贝和浅拷贝)
 
-### js原始数据类型
+### 一、js原始数据类型
 1. undefined  
 2. null  
 3. Boolean 
@@ -21,7 +21,7 @@
 6. [Object(Array,Date,Math,RegExp)](http://www.runoob.com/jsref/jsref-tutorial.html) 
 7. [Symbol](http://www.runoob.com/w3cnote/es6-symbol.html)
 
-### apply(),bind(),call
+### 二、apply(),bind(),call
 ```js
 // 都是改变this指向，第一个参数都是指向的对象，区别在第二个参数
 // apply()第二个参数已数组形式给出
@@ -31,7 +31,7 @@ bind(this,a,b,c)()
 // call()参数同bind()，但不需要调用
 call(this,a,b,c)
 ```
-### 事件委托
+### 三、事件委托
 个人理解：事件监听的一种用法，子元素较多的情况下，将监听的任务委托给其父元素，利用事件冒泡来监听子元素
 ### JavaScript中的this
 1. 在调用函数时使用`new`关键字，函数内的`this`是一个全新的对象。
@@ -72,7 +72,7 @@ Widget.init();
 ```
 [返回顶部 ▲](#目录)
 
-### JavaScript作用域以及闭包
+### 四、JavaScript作用域以及闭包
 作用域分为三种：
 - 全局作用域
 - 当前作用域/函数作用域
@@ -82,13 +82,17 @@ Widget.init();
 ```
 [返回顶部 ▲](#目录)
 
-### 原生对象的常用方法
+### 五、闭包
+
+[返回顶部 ▲](#目录)
+
+### 六、原生对象的常用方法
 ```js
 待补充
 ```
 [返回顶部 ▲](#目录)
 
-### 排序
+### 七、排序
 ```js
 // sort()默认按首字母或者数字的第一位排序 a-z,A-Z 
 let arr = [3,1,10,-2,0,8,-35]
@@ -103,7 +107,7 @@ arr.sort((a,b)=>{
 ```
 [返回顶部 ▲](#目录)
 
-### 数组去重
+### 八、数组去重
 ```js
 // ES6 Set
 let arr1 = [1,2,3,2,5,1];
@@ -131,7 +135,7 @@ for(let i=0;i<arr1.length;i++){
 ```
 [返回顶部 ▲](#目录)
 
-### forEach()和map()
+### 九、forEach()和map()
 ```js
 //都接受3个参数 item(当前项) index(当前项索引) arr(原数组)
 
@@ -168,7 +172,7 @@ map()返回一个新数组,数组的元素是回调函数处理过值,也不检�
 ```
 [返回顶部 ▲](#目录)
 
-### web存储 cookie localStorage sessionStorage
+### 十、web存储 cookie localStorage sessionStorage
 - H5之前，主要的存储方式是cookie
 - localStorage 存储于本地浏览器，不像cookie一样存储在http请求头字段里，节约了带宽
     大小一般限制为5M，只要不删除，就会一直存在
@@ -186,7 +190,7 @@ localstorage.clear():清除存储的所有数据
 
 [返回顶部 ▲](#目录)
 
-### 捕获和冒泡
+### 十一、捕获和冒泡
 - 事件分为捕获和冒泡事件
 - 个人理解：
 1. 代码自上而下执行，从外层标签到内层标签为捕获过程（window>document>body>div...）
@@ -199,8 +203,9 @@ document.addEventListener('event',function,type)
 ```
 [返回顶部 ▲](#目录)
 
-### 深拷贝和浅拷贝
-区别：`B复制了A，A发生改变时，B如果跟着改变，就是浅拷贝，B如果是独立的，不随着A发生改变，就是深拷贝`
+### 十二、深拷贝和浅拷贝
+区别：`B复制了A，A的属性不论是基础类型还是引用类型，B都不随A改变，则是深拷贝
+    B的基础类型属性没有改变(即第一层拷贝),引用类型(即更深层)随着A发生了改变,则是浅拷贝`
 这个概念针对引用类型数据
 1. 实现深拷贝
 ```js
@@ -213,5 +218,36 @@ let obj2 = JSON.parse(JSON.stringify(obj1));
     obj1   // {name: 'czy',age:25}  原对象属性被改变
     obj2   // {name: 'wjl',age:25}  深拷贝的对象拥有独立的内存，不受obj1变化的影响
 ```
+2. 浅拷贝(只实现一层的深拷贝)
+```js
+let a = {
+    name: 'wjl',
+    info:{
+        age: 25,
+        sexy:'boy'
+        }
+    },
+    b = Object.assign({},a);  // 该方法只能实现一层的深拷贝，如果对象属性也是对象，则不会实现深拷贝
+b.name = 'czy';
+b.info.sexy = 'girl';
+a // {name:'wjl',info:{age:25,sexy:'girl'}} 对象属性name为基础类型,没有改变
+b // {name:'czy',info:{age:25,sexy:'girl'}} 对象属性info为引用类型,发生了改变
+```
+也可以通过展开运算符`...`来实现浅拷贝
+```js
+ let a = {
+    name: 'wjl',
+    info:{
+        age: 25,
+        sexy:'boy'
+        }
+    },
+    b = {...a};
+b.name = 'czy';
+b.info.sexy = 'girl';
+a //{name: 'wjl',info: {age:25,sexy: 'girl'}} 对象属性name为基础类型,没有改变
+b //{name: 'czy',info: {age:25,sexy: 'girl'}} 对象属性info为引用类型,发生了改变
+```   
 
+[返回顶部 ▲](#目录)
 
