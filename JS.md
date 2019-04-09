@@ -1,6 +1,6 @@
 ## 目录
-- [一、js原始数据类型](#一、js原始数据类型)
-- [二、关于apply(),bind(),call()](#二、applybindcall)
+- [一、js原始数据类型](#一js原始数据类型)
+- [二、关于apply(),bind(),call()](#二applybindcall)
 - [三、事件委托](#三、事件委托)
 - [四、JavaScript中的this指向问题](#四、JavaScript中的this)
 - [五、闭包（***待完善***）](#五、JavaScript作用域以及闭包)
