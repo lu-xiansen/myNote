@@ -1,16 +1,16 @@
 ## 目录
 - [一、js原始数据类型](#一js原始数据类型)
 - [二、关于apply(),bind(),call()](#二applybindcall)
-- [三、事件委托](#三、事件委托)
-- [四、JavaScript中的this指向问题](#四、JavaScript中的this)
-- [五、闭包（***待完善***）](#五、JavaScript作用域以及闭包)
-- [六、多个原生对象的常用方法](#六、原生对象的常用方法)
-- [七、排序sort()](#七、排序)
-- [八、数组去重](#八、数组去重)
-- [九、forEach()和map()](#九、forEach和map)
-- [十、web存储](#十、web存储-cookie-localStorage-sessionStorage)
-- [十一、捕获和冒泡](#十一、捕获和冒泡)
-- [十二、深拷贝和浅拷贝](#十二、深拷贝和浅拷贝)
+- [三、事件委托](#三事件委托)
+- [四、JavaScript中的this指向问题](#四JavaScript中的this)
+- [五、闭包（***待完善***）](#五JavaScript作用域以及闭包)
+- [六、多个原生对象的常用方法](#六原生对象的常用方法)
+- [七、排序sort()](#七排序)
+- [八、数组去重](#八数组去重)
+- [九、forEach()和map()](#九forEach和map)
+- [十、web存储](#十web存储-cookie-localStorage-sessionStorage)
+- [十一、捕获和冒泡](#十一捕获和冒泡)
+- [十二、深拷贝和浅拷贝](#十二深拷贝和浅拷贝)
 
 ### 一、js原始数据类型
 1. undefined  
