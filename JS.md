@@ -11,6 +11,7 @@
 - [十、web存储](#十web存储-cookie-localStorage-sessionStorage)
 - [十一、捕获和冒泡](#十一捕获和冒泡)
 - [十二、深拷贝和浅拷贝](#十二深拷贝和浅拷贝)
+- [十三、防抖和节流](#防抖和节流)
 
 ### 一、js原始数据类型
 1. undefined  
@@ -293,6 +294,10 @@ b.info.sexy = 'girl';
 a //{name: 'wjl',info: {age:25,sexy: 'girl'}} 对象属性name为基础类型,没有改变
 b //{name: 'czy',info: {age:25,sexy: 'girl'}} 对象属性info为引用类型,发生了改变
 ```   
+
+[返回顶部 ▲](#目录)
+
+### 十三、防抖和节流
 
 [返回顶部 ▲](#目录)
 
