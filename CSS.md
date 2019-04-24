@@ -18,3 +18,4 @@ BFC特性 推荐[CSS深入理解流体性和BFC特性](https://www.zhangxinxu.co
 
 ### 3. flex布局
 ![image](https://github.com/lu-xiansen/myNote/tree/master/img/flex.png)
+<img src="https://github.com/lu-xiansen/myNote/tree/master/img" width="100%">
