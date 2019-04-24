@@ -16,6 +16,5 @@ div {
 
 BFC特性 推荐[CSS深入理解流体性和BFC特性](https://www.zhangxinxu.com/wordpress/2015/02/css-deep-understand-flow-bfc-column-two-auto-layout/)
 
-```html
-  <img src="https://github.com/lu-xiansen/myNote/tree/master/img/flex.png">
-```
+### 3. flex布局
+![image](https://github.com/lu-xiansen/myNote/tree/master/img/flex.png)
