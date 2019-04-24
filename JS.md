@@ -133,8 +133,8 @@ var max = 10,
 [返回顶部 ▲](#目录)
 
 ### 六、原生对象的常用方法
-·数组
-<img src="https://github.com/lu-xiansen/myNote/blob/master/img/Array.jpg?raw=true">
+1. 数组  
+<img src="https://github.com/lu-xiansen/myNote/blob/master/img/Array.jpg?raw=true">  
 
 [返回顶部 ▲](#目录)
 
