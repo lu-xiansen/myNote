@@ -105,7 +105,7 @@ fn()执行时打印的x取值要去`创建`这个函数(即fn)的作用域取而
 ```js
 function fn(){
     var max = 10;
-    return function bar(){      // 
+    return function bar(x){      // 
         if(x>max){
             console.log(x)
         }
