@@ -119,7 +119,7 @@ f1(15);  // 15
 2. 函数作为参数传递  
 ```js
 var max = 10,
-    fn = function(){
+    fn = function(x){
         if(x>max){
             console.log(x)
         }
