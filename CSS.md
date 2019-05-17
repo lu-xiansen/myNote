@@ -11,8 +11,10 @@ div {
  · 父级div定义height  
  · 结尾处加空div标签clear:both  
  · 父级div定义伪类:after和zoom   
-    ```.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}  
-    .clearfloat{zoom:1}  ```
+    ```
+    .clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}   
+    .clearfloat{zoom:1} 
+    ```  
  · 父级div定义overflow:hidden  
  · 父级div也浮动，需要定义宽度  
  · 结尾处加br标签clear:both  
