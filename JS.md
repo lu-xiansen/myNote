@@ -36,7 +36,7 @@ call(this,a,b,c)
 ### 三、事件委托
 个人理解：事件监听的一种用法，子元素较多的情况下，将监听的任务委托给其父元素，利用事件冒泡来监听子元素  
 jQuery里的 ```$('ul').on('click',fn)```  
-js的 ```document.addEveneListener('click',fn)```  
+js的 ```document.addEventListener('click',fn)```  
 都能通过冒泡来给子元素注册事件，性能更优，且动态添加的子元素也可以触发事件
 
 ### 四、JavaScript中的this
