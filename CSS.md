@@ -44,6 +44,7 @@ BFC特性 推荐[CSS深入理解流体性和BFC特性](https://www.zhangxinxu.co
 p{
   text-align: center;
   background: linear-gradient(transparent 49%,#000 49%,#000 51%,transparent 51%);
+  /* 49%之前是透明,透明到黑色不需要过渡,所以49%需要重新设置#000,49%-51%为#000,51%之后为透明 */
 }
 span{
   background: #fff;
