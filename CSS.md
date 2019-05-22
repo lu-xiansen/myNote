@@ -37,3 +37,18 @@ BFC特性 推荐[CSS深入理解流体性和BFC特性](https://www.zhangxinxu.co
 
 ### 5. flex布局
 <img src="https://github.com/lu-xiansen/myNote/blob/master/img/flex.jpg?raw=true">
+
+### 6.文字加背景横条  —————— 居中文字 ——————
+用背景色渐变来实现
+```css
+p{
+  text-align: center;
+  background: linear-gradient(transparent 49%,#000 49%,#000 51%,transparent 51%);
+}
+span{
+  background: #fff;
+}
+```
+```html
+<p><span>居中文字</span></p>
+```
