@@ -206,8 +206,8 @@ num.forEach(function(item,index,arr){
 // num [2,3,4]
 在使用forEach()时候，如果数组在迭代的过程被修改，后续函数执行时传入的就是修改后的数组。
 因为forEach()不会在迭代之前创建数组的副本
-forEach()返回值为undefined，不能链式调用
-原数组被改变
+forEach()返回值为undefined，不能链式调用  
+用来遍历数组，并且做一些操作。
 
 let arr = [1,4,9,16]
 arr.map(function(item,index,arr){
@@ -218,7 +218,8 @@ arr.map(function(item,index,arr){
 arr.map(Math.sqrt)
 
 map()返回一个新数组,数组的元素是回调函数处理过值,也不检测空数组
-不改变原数组
+不改变原数组  
+用来处理数组中的每一项，并且返回一个处理后的新数组
 ```
 [返回顶部 ▲](#目录)
 
