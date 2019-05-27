@@ -260,6 +260,7 @@ document.addEventListener('event',function,type)
 这个概念针对引用类型数据
 1. 实现深拷贝
 ```js
+// 1  
 let obj1 = {
     name: 'wjl',
     age: 25
@@ -267,7 +268,21 @@ let obj1 = {
 let obj2 = JSON.parse(JSON.stringify(obj1));  
     obj1.name = 'czy';
     obj1   // {name: 'czy',age:25}  原对象属性被改变
-    obj2   // {name: 'wjl',age:25}  深拷贝的对象拥有独立的内存，不受obj1变化的影响
+    obj2   // {name: 'wjl',age:25}  深拷贝的对象拥有独立的内存，不受obj1变化的影响  
+// 2  
+function deepCopy(obj) {
+      var result = Array.isArray(obj) ? [] : {};
+      for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+          if (typeof obj[key] === 'object') {
+            result[key] = deepCopy(obj[key]);   //递归复制
+          } else {
+            result[key] = obj[key];
+          }
+        }
+      }
+      return result;
+    }
 ```
 2. 浅拷贝(只实现一层的深拷贝)
 ```js
