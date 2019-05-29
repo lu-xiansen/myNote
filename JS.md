@@ -13,7 +13,7 @@
 - [十二、深拷贝和浅拷贝](#十二深拷贝和浅拷贝)
 - [十三、防抖和节流](#十三防抖和节流)
 - [十四、常见状态码](#十四常见状态码)
-- [十五、for in & for of](#十五forin&forof)
+- [十五、for in & for of](#十五for in&for of)
 ### 一、js原始数据类型
 1. undefined  
 2. null  
