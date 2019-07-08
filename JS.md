@@ -154,6 +154,14 @@ arr.sort((a,b)=>{
 arr.sort((a,b)=>{
     return b-a      // 理解为b到a
 })  // [10, 8, 3, 1, 0, -2, -35]
+
+数组项为引用类型排序 [obj,obj,obj]
+function sortObj(propertypeName){
+    return function(obj1,obj2){
+        return obj1[propertypeName]-obj2[propertypeName]
+    }
+}
+arr.sort(sortObj("age"))   // 数组根据数组项的age属性排序  
 ```
 [返回顶部 ▲](#目录)
 
