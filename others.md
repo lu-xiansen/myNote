@@ -10,4 +10,7 @@
 一句话：nginx会给你分配服务器压力小的去访问  
 
 ### 原生DOM状态切换（改变类）
-```document.classList.toggle('class')``` 写了n多判断，才知道有原生的方法 ┭┮﹏┭┮
+```js
+document.classList.toggle('class') //写了n多判断，才知道有原生的方法 ┭┮﹏┭┮
+dom.getBoundingClientRect()   //返回dom的宽高,以及基于viewport左上角的上下左右距离和起点x,y坐标
+```
