@@ -48,7 +48,7 @@ js的 ```document.addEventListener('click',fn)```
     浏览器环境下`this`的值指向`window`对象，但是在严格模式下`('use strict')`，`this`的值为`undefined`。
 5. 如果符合上述多个规则，则较高的规则（1 号最高，4 号最低）将决定this的值。
 6. 如果该函数是 ES2015 中的箭头函数，将忽略上面的所有规则，`this`被设置为它被创建时的上下文。
-    箭头函数的`this`具有穿透性，将`this`的作用域延伸至上一层区域，如：
+   指向箭头函数外层非箭头函数的this指向 ;如：
 ```js
 var Widget={
     init:function () {
