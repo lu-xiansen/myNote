@@ -14,3 +14,7 @@
 document.classList.toggle('class') //写了n多判断，才知道有原生的方法 ┭┮﹏┭┮
 dom.getBoundingClientRect()   //返回dom的宽高,以及基于viewport左上角的上下左右距离和起点x,y坐标
 ```
+### 判断页面是加载还是刷新
+```js
+performance.navigation.type    //  0 加载  1 刷新
+```
