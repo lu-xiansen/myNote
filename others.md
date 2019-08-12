@@ -27,3 +27,39 @@ performance.navigation.type    //  0 加载  1 刷新
 4. 发送http请求,向服务器请求所需的资源.  
 5. 解析返回的资源,构建html树,css树,渲染,绘制,最终呈现出来  
 ```
+
+### 时间戳格式化
+```js
+/** 
+ * 时间戳转化为年 月 日 时 分 秒 
+ * number: 传入时间戳 
+ * format：返回格式，支持自定义，但参数必须与formateArr里保持一致 
+*/  
+function formatTime(number,format) {  
+  
+  var formateArr  = ['Y','M','D','h','m','s'];  
+  var returnArr   = [];  
+  
+  var date = new Date(number * 1000);  
+  returnArr.push(date.getFullYear());  
+  returnArr.push(formatNumber(date.getMonth() + 1));  
+  returnArr.push(formatNumber(date.getDate()));  
+  
+  returnArr.push(formatNumber(date.getHours()));  
+  returnArr.push(formatNumber(date.getMinutes()));  
+  returnArr.push(formatNumber(date.getSeconds()));  
+  
+  for (var i in returnArr)  
+  {  
+    format = format.replace(formateArr[i], returnArr[i]);  
+  }  
+  return format;  
+} 
+
+//数据转化  
+function formatNumber(n) {  
+  n = n.toString()  
+  return n[1] ? n : '0' + n  
+} 
+eg:  formatTime(+new Date,'Y/M/D h:m:s')  // '2019/08/12 10:06:20'
+```
