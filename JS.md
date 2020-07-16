@@ -260,6 +260,7 @@ document.addEventListener('event',function,type)
 // function: 事件触发后执行的函数
 // type: true/false  指定为冒泡或捕获（可选,默认false,即默认为冒泡）
 // 阻止冒泡：e.stopProppagation() 或 e.cancelBubble = true (IE)
+// 捕获时，会触发父级到子级的同一事件
 回调函数参数
 ```
 [返回顶部 ▲](#目录)
