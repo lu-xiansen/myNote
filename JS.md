@@ -259,6 +259,8 @@ document.addEventListener('event',function,type)
 // event: 事件类型
 // function: 事件触发后执行的函数
 // type: true/false  指定为冒泡或捕获（可选,默认false,即默认为冒泡）
+// 阻止冒泡：e.stopProppagation() 或 e.cancelBubble = true (IE)
+回调函数参数
 ```
 [返回顶部 ▲](#目录)
 
