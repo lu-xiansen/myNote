@@ -329,7 +329,29 @@ b //{name: 'czy',info: {age:25,sexy: 'girl'}} 对象属性info为引用类型,�
 [返回顶部 ▲](#目录)
 
 ### 十三、防抖和节流
-
+1.防抖(debounce)
+场景: input 每输入一个字符都会触发input事件,防抖可以设置多长时间触发一次
+```
+/**
+*@param fn {Function} 实际要执行的函数
+*@param delay {Number} 延迟的时间,单位ms
+*@return {Function} 
+*/
+function debounce(fn,delay){
+    //定时器
+    let timer
+    return function(){
+        const context = this
+        const args = arguments
+        //每次触发的时候清除定时器,防止事件触发,达到重置的效果
+        clearTimeout(timer)
+        
+        timer = setTimeout(function(){
+            fn.apply(context,args)
+        },delay)
+    }
+}
+```
 [返回顶部 ▲](#目录)  
 
 ### 十四、常见状态码  
