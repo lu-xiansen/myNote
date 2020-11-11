@@ -330,7 +330,7 @@ b //{name: 'czy',info: {age:25,sexy: 'girl'}} 对象属性info为引用类型,�
 
 ### 十三、防抖和节流
 1.防抖(debounce)
-场景: input 每输入一个字符都会触发input事件,防抖可以设置多长时间触发一次
+场景: 动作发生后延迟一定时间再执行
 ```
 /**
 *@param fn {Function} 实际要执行的函数
@@ -349,6 +349,28 @@ function debounce(fn,delay){
         timer = setTimeout(function(){
             fn.apply(context,args)
         },delay)
+    }
+}
+```
+2.节流(throttle)
+场景: 动作发生即执行,此后一定时间内即使再次触发也不再执行
+```
+function throttle(fn,delay){
+    let timer
+    return function(){
+        const context = this
+        const args = arguments
+        const last = timer
+        const now = Date.now()
+        //第一次执行,不需要节流
+        if(!last){
+            timer = now
+            fn.apply(context,args)
+            return
+        }
+        if(last + delay > now) return
+        timer = now
+        fn.apply(context,args)
     }
 }
 ```
